@@ -71,10 +71,9 @@ export default function Schedules({ schedules }) {
             {/* Header */}
             <div className="px-4 bg-gray-50 sm:px-6 py-8 border-b border-gray-200 text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold text-blue-950">
-                    Upcoming Schedule Of <span className="text-red-600">MV Teknaf</span>
+                    হজ ও ওমরাহযাত্রার সম্ভাব্য পরবর্তী সূচি
                 </h2>
-                <h3 className="text-lg sm:text-2xl mt-2 font-semibold text-gray-700">Teknaf - Saint Martin's Island - Teknaf</h3>
-                <p className="text-sm sm:text-base font-semibold text-red-700 mt-1">“Schedule may change with tidal state’’</p>
+                <p className="text-sm sm:text-base font-semibold text-red-700 mt-1">“বিশেষ প্রয়োজনে সময়সূচী পরিবর্তন হতে পারে।’’</p>
             </div>
 
             {/* Schedule Section */}

@@ -9,13 +9,13 @@ export const metadata = {
 
 
 export default async function Page() {
-     const schedules = await getSchedules(819);
+     const schedules = await getSchedules(822);
      console.log('schedules:', schedules);
 
   return (
     <div className="pt-0 bg-gray-50">
        <Banner
-          imageUrl="/13.png"
+          imageUrl="/jeddah.jpg"
           title="Schedules"
           subtitle=""
           heightClass=" h-[50vh] lg:h-[60vh]"

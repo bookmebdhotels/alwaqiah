@@ -11,8 +11,8 @@ export default function CruisePromo() {
       {/* Text Section */}
       <div className="md:w-1/2 space-y-5">
         <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
-          Discover Royal Luxury <br />
-          <span className="text-red-700">Aboard MV Teknaf</span>
+          ওয়াকিয়া হজ কাফেলা: <br />
+          <span className="text-red-700">বিশ্বস্ত হজ-ওমরাহ সেবা</span>
         </h2>
 
         {/* Stars */}
@@ -22,9 +22,9 @@ export default function CruisePromo() {
 
         {/* Description */}
         <p className={`${roboto.className} text-gray-700 leading-relaxed text-justify`}>
-          MV Teknaf is a modern passenger and sea-cruising vessel operating along the coastal waters of the Bay of Bengal. Designed for comfort and safety, Teknaf features air-conditioned seating, private cabins, an open deck for panoramic views, and onboard dining — redefining sea travel for the modern explorer.
+          ওয়াকিয়া হজ কাফেলা বিশ্বস্ততা ও সুনামের সাথে দীর্ঘদিন ধরে পবিত্র হজ ও ওমরাহ পালনে হাজীদের সেবা দিয়ে আসছে। অভিজ্ঞ আলেম ও মুয়াল্লিমের সরাসরি তত্ত্বাবধানে সুন্নাহ অনুযায়ী সঠিক নিয়মে হজ ও ওমরাহের সমস্ত হুকুম-আহকাম পালনে আমরা বদ্ধপরিকর। আমাদের দক্ষ টিম প্রতিটি পদক্ষেপেই হাজীদের সঠিক দিকনির্দেশনা ও সার্বিক সহায়তা প্রদান করে, যেন আপনার আত্মিক এই সফর হয় সহজ, সুন্দর ও সমর্পিত।
           <br /><br />
-          Whether you are planning a family vacation, a romantic getaway, or an adventure trip, MV Teknaf ensures a memorable experience from the moment you step on board. Sail between Teknaf and Saint Martin's Island in comfort and style, and let the beauty of the Bay of Bengal create lasting memories.
+         হাজীদের সর্বোচ্চ আরাম ও মানসিক শান্তি নিশ্চিত করতে ওয়াকিয়া হজ কাফেলা নিয়ে এসেছে আধুনিক ও মানসম্মত সেবা। মক্কা ও মদিনায় হারাম শরীফের কাছে আবাসন, আরামদায়ক পরিবহন, স্বাস্থ্যসম্মত খাবার এবং দ্রুত ভিসা ও এয়ার টিকিট বুকিং সেবাসহ আমরা অফার করছি আকর্ষণীয় হজ ও ওমরাহ প্যাকেজ। আপনার পছন্দ ও বাজেট অনুযায়ী সেরা প্যাকেজটি বেছে নিতে এবং নিশ্চিন্তে ইবাদতে মনোনিবেশ করতে আজই ওয়াকিয়া হজ কাফেলার সাথে যোগাযোগ করুন।
         </p>
         <Link href="/get-a-call">
           <button style={{

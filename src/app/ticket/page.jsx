@@ -12,8 +12,8 @@ export const metadata = {
 
 
 export default async function Page() {
-  const packages = await getPackages(819);
-  const foodAndDescription = await getFoodAndDescription(819)
+  const packages = await getPackages(822);
+  const foodAndDescription = await getFoodAndDescription(822)
   return (
     <div className="pt-0 bg-gray-50">
       <Banner

@@ -121,7 +121,7 @@ const ImageCarousel = ({ propertyImages }) => {
   return (
     <div className="py-10">
       <h4 className="text-3xl text-center text-blue-950  py-8 lg:text-3xl font-bold mb-4">
-        Photo <span className="text-red-700">Gallery</span>
+        ফটো গ্যালারি 
       </h4>
       <div
         className="flex lg:flex-row flex-col items-start gap-4 mx-auto bg-[#EBF0F4]"

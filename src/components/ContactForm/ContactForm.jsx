@@ -26,8 +26,8 @@ const ContactForm = ({ title }) => {
             name: `${data.firstName}`,
             number: data.phoneNumber,
             additional_info: data.additionalInfo,
-            property_name: "MV Teknaf",
-            category: "819",
+            property_name: "Al-Waqiah Hajj Kafela",
+            category: "819", 
         };
 
         try {
@@ -40,21 +40,21 @@ const ContactForm = ({ title }) => {
 
             const apiResponse = await postPackageInfo(apiData);
             if (apiResponse.error) {
-                toast.error("Failed to submit package info.");
+                toast.error("তথ্য জমা দেওয়া ব্যর্থ হয়েছে। আবার চেষ্টা করুন।");
             } else {
-                toast.success("Submitted Successfully");
-                reset(); // Clear form after successful submission
+                toast.success("আপনার বার্তাটি সফলভাবে পাঠানো হয়েছে!");
+                reset(); 
             }
         } catch (error) {
             console.error("Error:", error);
-            toast.error("An error occurred while processing your request.");
+            toast.error("অনুরোধ প্রক্রিয়াকরণে একটি সমস্যা ঘটেছে।");
         }
     };
 
     return (
         <div style={{
-            boxShadow: 'inset 0 4px 8px rgba(67, 56, 202, 0.4)' // Tailwind's indigo-700 as rgba
-        }} className="md:max-w-lg w-full mx-auto  p-8 bg-white rounded-2xl shadow-xl border border-gray-100">
+            boxShadow: 'inset 0 4px 8px rgba(67, 56, 202, 0.4)'
+        }} className="md:max-w-lg w-full mx-auto p-8 bg-white rounded-2xl shadow-xl border border-gray-100">
             <ToastContainer
                 position="top-right"
                 autoClose={3000}
@@ -67,46 +67,50 @@ const ContactForm = ({ title }) => {
                 pauseOnHover
                 theme="light"
             />
+            
             {title === "show" &&
                 <div className="text-center mb-8">
-                    <h1 className="text-xl text-blue-800 font-bold text-blur-950 mb-2">
-                        Send Us a Message
+                    <h1 className="text-xl text-blue-800 font-bold mb-2">
+                        আমাদের সাথে যোগাযোগ করুন
                     </h1>
-                    <p className="text-gray-600">We will get back to you as soon as possible</p>
+                    <p className="text-gray-600 text-sm">পবিত্র হজ ও ওমরাহ সংক্রান্ত যেকোনো তথ্যের জন্য ফরমটি পূরণ করুন</p>
                 </div>
             }
+
+     
+
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                {/* First Name */}
+                {/* Full Name */}
                 <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                        Name <span className="text-red-600">*</span>
+                        আপনার নাম <span className="text-red-600">*</span>
                     </label>
                     <input
                         type="text"
                         id="firstName"
                         {...register("firstName", { required: true })}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                        placeholder="Your full name"
+                        placeholder="আপনার পূর্ণ নাম লিখুন"
                     />
                     {errors.firstName && (
-                        <p className="mt-1 text-sm text-red-600">Name is required</p>
+                        <p className="mt-1 text-sm text-red-600">আপনার নাম দেয়া আবশ্যক</p>
                     )}
                 </div>
 
                 {/* Phone Number */}
                 <div>
                     <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-1">
-                        Phone Number <span className="text-red-600">*</span>
+                        মোবাইল নম্বর <span className="text-red-600">*</span>
                     </label>
                     <input
                         type="tel"
                         id="phoneNumber"
                         placeholder="01xxxxxxxxx"
                         {...register("phoneNumber", {
-                            required: "Phone number is required",
+                            required: "মোবাইল নম্বর দেয়া আবশ্যক",
                             pattern: {
                                 value: /^[0-9]{11,}$/,
-                                message: "Phone number must be at least 11 digits and contain only numbers",
+                                message: "সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন",
                             },
                         })}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -119,7 +123,7 @@ const ContactForm = ({ title }) => {
                 {/* Email Address */}
                 <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address
+                        ইমেইল এড্রেস (ঐচ্ছিক)
                     </label>
                     <input
                         type="email"
@@ -133,13 +137,13 @@ const ContactForm = ({ title }) => {
                 {/* Additional Info */}
                 <div>
                     <label htmlFor="additionalInfo" className="block text-sm font-medium text-gray-700 mb-1">
-                        Additional Info
+                        অতিরিক্ত তথ্য / প্রশ্ন
                     </label>
                     <textarea
                         id="additionalInfo"
                         {...register("additionalInfo")}
                         rows={4}
-                        placeholder="Tell us how we can help you..."
+                        placeholder="আপনি হজ বা ওমরাহ প্যাকেজ সম্পর্কে কী জানতে চান বিস্তারিত লিখুন..."
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                     />
                 </div>
@@ -160,9 +164,9 @@ const ContactForm = ({ title }) => {
                                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                             </svg>
-                            Processing...
+                            পাঠানো হচ্ছে...
                         </span>
-                    ) : "Submit"}
+                    ) : "মেসেজ পাঠান"}
                 </button>
             </form>
         </div>

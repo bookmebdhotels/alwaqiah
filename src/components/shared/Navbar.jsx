@@ -281,8 +281,8 @@ const BookMeHeader = () => {
                 </Link>
 
                 <Link
-                  href="/schedule"
-                  className={`text-sm font-semibold transition-colors duration-200 ${isActiveLink("/schedule")
+                  href="/ticket"
+                  className={`text-sm font-semibold transition-colors duration-200 ${isActiveLink("/ticket")
                     ? "text-white border-b-2 border-red-100"
                     : "hover:text-white text-white"
                     }`}
@@ -292,15 +292,17 @@ const BookMeHeader = () => {
                 </Link>
 
                 <Link
-                  href="/ticket"
-                  className={`text-sm font-semibold transition-colors duration-200 ${isActiveLink("/ticket")
+                  href="/schedule"
+                  className={`text-sm font-semibold transition-colors duration-200 ${isActiveLink("/schedule")
                     ? "text-white border-b-2 border-red-100"
                     : "hover:text-white text-white"
                     }`}
                   prefetch
                 >
-                  তথ্য
+                   তথ্য
                 </Link>
+
+                
 
                 <Link
                   href="/payment"

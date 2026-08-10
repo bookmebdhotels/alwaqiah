@@ -7,6 +7,7 @@ import Packages from "@/components/Packages/package";
 import PaymentMethods from "@/components/PaymentMethods/PaymentMethods";
 import Schedules from "@/components/Schedules/schedules";
 import StepProcess from "@/components/Step/step";
+import YouTubeSlider from "@/components/YouTubeSlider/YouTubeSlider";
 import Banner from "@/components/ui/Banner";
 import getFoodAndDescription from "@/lib/getFoodAndDescription";
 import getPackages from "@/lib/getPackages";
@@ -28,10 +29,11 @@ export default async function Home() {
           title="দারুণ সব সুযোগ-সুবিধা নিয়ে সেরা উমরাহ ও হজ প্যাকেজ"         
           heightClass=" h-[65vh] lg:h-[100vh]"
         />
-        <StepProcess />
+        <YouTubeSlider />
+        {/* <StepProcess /> */}
         <Packages packages={packages} foodAndDescription = {foodAndDescription} />
         <Schedules schedules ={schedules} />
-        <PaymentMethods />
+        {/* <PaymentMethods /> */}
         <CruisePromo />
         <ImageCarousel propertyImages={images} />      
         <FAQSection/>

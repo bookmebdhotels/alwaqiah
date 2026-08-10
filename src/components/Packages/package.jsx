@@ -124,16 +124,16 @@ export default function Packages({ packages, foodAndDescription }) {
             <div className="max-w-5xl mx-auto px-4 ">
                 <div className={`  text-center mb-12`}>
                     <h1 className="text-2xl  text-center text-blue-950  pt-8 lg:text-3xl font-bold mb-1">
-                        MV Teknaf <span className="text-red-700">Packages</span>
+                        আল-ওয়াকিয়া হজ কাফেলা-র  হজ ও ওমরাহ <span className="text-red-700">প্যাকেজসমূহ </span>
                     </h1>
-                    <p className="text-gray-900 max-w-3xl mx-auto">
+                    {/* <p className="text-gray-900 max-w-3xl mx-auto">
                         Explore our premium cruise packages with exceptional amenities and competitive pricing
-                    </p>
+                    </p> */}
                     <button
                         onClick={() => setShowModal(true)}
                         className="bg-gradient-to-r from-[#313881] to-[#0678B4] text-white px-6 py-3 mt-3 rounded-lg"
                     >
-                        Food & Travel Description
+                        খাবার ও ভ্রমণের বিবরণ
                     </button>
                     <div className='max-h-[80vh]'>
                         <Modal
@@ -224,9 +224,9 @@ export default function Packages({ packages, foodAndDescription }) {
                                                 <div>
                                                     <div className="flex justify-between items-start mb-2">
                                                         <h5 className="text-2xl font-bold text-blue-950">{pkg.unit_name}</h5>
-                                                        <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
+                                                        {/* <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
                                                             {pkg.unit_category}
-                                                        </span>
+                                                        </span> */}
                                                     </div>
 
                                                     <div className="flex flex-wrap gap-3 mb-4 text-sm text-gray-900">
@@ -278,11 +278,9 @@ export default function Packages({ packages, foodAndDescription }) {
                                                                     </p>
                                                                 </div>
                                                                 <div className='flex items-center justify-center'>
-                                                                    <p className="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 inline-block rounded">
-                                                                        {pkg.Validity}
-                                                                    </p>
+                                                                   
                                                                     {/* Price Note */}
-                                                                    <p className="text-xs text-gray-500">/ Per person</p>
+                                                                    <p className="text-xs text-gray-500">Per person</p>
                                                                 </div>
 
                                                             </div>
