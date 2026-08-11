@@ -26,7 +26,8 @@ export default async function Home() {
       <div>
         <Banner
           imageUrl="/jeddah.jpg"        
-          title="দারুণ সব সুযোগ-সুবিধা নিয়ে সেরা উমরাহ ও হজ প্যাকেজ"         
+          title="দারুণ সব সুযোগ-সুবিধা নিয়ে সেরা উমরাহ ও হজ প্যাকেজ" 
+          subtitle="আপনার স্বপ্নের উমরাহ ও হজ যাত্রা শুরু করুন আমাদের সাথে"        
           heightClass=" h-[65vh] lg:h-[100vh]"
         />
         <YouTubeSlider />

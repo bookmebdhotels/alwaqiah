@@ -42,17 +42,17 @@ const Banner = ({ imageUrl, ship, title, subtitle, heightClass }) => {
 
           {/* Title */}
           {title && (
-            <h1 className={`text-xl md:text-3xl lg:text-5xl italic leading-tight drop-shadow-lg ${playfair.className}`}>
+            <h1 className={`text-4xl md:text-3xl lg:text-5xl italic leading-tight drop-shadow-lg ${playfair.className}`}>
               {title}
             </h1>
           )}
 
           {/* Subtitle */}
-          {/* {subtitle && (
-            <p className={`text-xl md:text-lg lg:text-4xl text-[#71C3C7] font-light max-w-xl drop-shadow-md ${playfair.className}`}>
+          {subtitle && (
+            <p className={`text-sm md:text-lg lg:text-4xl text-[#71C3C7] font-light max-w-xl drop-shadow-md ${playfair.className}`}>
               {subtitle}
             </p>
-          )} */}
+          )}
 
           {/* Call Buttons */}
           <div className="flex flex-row flex-wrap gap-2 sm:gap-3 mt-1">
