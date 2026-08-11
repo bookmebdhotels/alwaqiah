@@ -338,7 +338,7 @@ export default function Packages({ packages, foodAndDescription }) {
                             })}
                             <div className="flex flex-col items-center space-y-2">
                                 <p className="text-lg text-red-600 font-semibold text-center">
-                                    To Buy Ticket Sign Up & Get A Call
+                                    কলে কথা বলতে সাইনআপ করুন
                                 </p>
                                 <Link href="/get-a-call">
                                     <button className="bg-gradient-to-r from-[#313881] to-[#0678B4] text-white px-4 py-2 rounded">
